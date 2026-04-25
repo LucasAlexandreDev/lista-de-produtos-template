@@ -1,9 +1,9 @@
 <!-- 
 /***********************************************************************
-* Objective: Estrutura HTML para lista de produtos (consumindo dado estático (JSON) )
+* Objective: Estrutura HTML para lista de produtos
 * Date     : 2026-04-21
 * Developer: Lucas Alexandre da Silva
-* Version  : 1.0
+* Version  : 1.1
 ***********************************************************************/
 -->
 
@@ -11,20 +11,28 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Lista de Produtos</title>
 </head>
+
 <body>
 
     <!-- | Cabeçalho | -->
     <header>
-        <h1>Loja de Produtos</h1>
+        <div class="header-container">
 
-        <!-- Navegação Principal -->
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Informática</a>
-            <a href="#">Eletrônicos</a>
-        </nav>
+            <!-- Logo -->
+            <div class="logo">Loja de Produtos</div>
+
+            <!-- Busca -->
+            <div class="buscar">
+                <input type="text" placeholder="Buscar produtos...">
+                <button>Buscar</button>
+            </div>
+
+        </div>
     </header>
 
     <!-- | Conteúdo Principal | -->
@@ -48,7 +56,7 @@
         <p>© 2026 - Loja de Produtos</p>
     </footer>
 
-    <!-- Carregamento de módulo JS -->
+    <!-- JS -->
     <script type="module" src="./js/main.js"></script>
 
 </body>
