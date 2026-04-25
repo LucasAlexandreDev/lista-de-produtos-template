@@ -20,7 +20,7 @@ const criarCard = function(produto){
     card.className = 'card'
 
     const imagem = document.createElement('img')   // Cria a imagem do produto
-    imagem.src   = `../img/${produto.imagem}`       // Define o caminho da imagem 
+    imagem.src   = `./img/${produto.imagem}`       // Define o caminho da imagem 
     imagem.alt   = `Imagem de ${produto.nome}`     // Define o texto alternativo (acessibilidade)
 
     const nome       = document.createElement('h3')      // Cria o elemento para o nome do produto
